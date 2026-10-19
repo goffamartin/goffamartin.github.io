@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Goffa | Software Architect & Full-stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#0ea5e9', // Azure modrá
+                        dark: '#0f172a',    // Tmavé pozadí
+                        darker: '#020617'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { 
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+        }
+        .fade-in.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    </style>
+</head>
+<body class="bg-darker text-gray-200 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider">
+                    <span class="text-primary">&lt;</span> MartinGoffa <span class="text-primary">/&gt;</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#o-mne" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">O mně</a>
+                        <a href="#dovednosti" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Dovednosti</a>
+                        <a href="#praxe" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Praxe & Projekty</a>
+                        <a href="#vzdelani" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Vzdělání</a>
+                        <a href="#kontakt" class="bg-primary hover:bg-sky-600 text-white px-4 py-2 rounded-md text-sm font-bold transition-colors">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <h2 class="text-primary font-semibold tracking-wide uppercase mb-3 fade-in">Software Architect & Full-stack vývojář</h2>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight fade-in" style="transition-delay: 100ms;">
+            Martin Goffa
+        </h1>
+        <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 mb-10 fade-in" style="transition-delay: 200ms;">
+            Měním složité procesy ve spolehlivý software. Od návrhu architektury přes vývoj, databáze a sítě až po DevOps. 
+            Dodávám kompletní řešení od A do Z s využitím moderních a AI technologií.
+        </p>
+        <div class="flex space-x-4 fade-in" style="transition-delay: 300ms;">
+            <a href="#kontakt" class="bg-primary hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-primary/30 transition-all hover:-translate-y-1">
+                Zahájit spolupráci
+            </a>
+        </div>
+    </section>
+
+    <section id="o-mne" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-3xl font-bold text-white mb-8">Něco málo o mně</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                Jsem vývojář s více než 4 lety profesionální praxe. Nestavím se jen do role programátora – jsem inženýr, 
+                který přebírá zodpovědnost za celý životní cyklus aplikace. Mojí doménou je backend v <strong>.NET</strong> a frontend v <strong>Blazoru</strong>, 
+                jsem certifikovaný <strong>Azure Cloud Developer</strong>.
+            </p>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                V dnešní době AI pro mě není překážkou vyvíjet v jakékoliv technologii. Intenzivně se zabývám <strong>vývojem AI agentů</strong> 
+                a dbám na dodávání vysoce kvalitního, čistého a udržitelného kódu. Ať už jde o databáze, sítě nebo nasazení, 
+                mám široký přesah napříč celým IT spektrem.
+            </p>
+        </div>
+    </section>
+
+    <section id="dovednosti" class="py-20 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Technologický Stack</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Core Development -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in">
+                    <i class="fa-brands fa-microsoft text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Core Development</h3>
+                    <p class="text-gray-400 mb-4">Primární zaměření na robustní technologie od Microsoftu a moderní web.</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> .NET & C#</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Blazor Frontend</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Webové technologie & API</li>
+                    </ul>
+                </div>
+                
+                <!-- Architektura & Cloud -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 100ms;">
+                    <i class="fa-solid fa-cloud text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Architektura & Cloud</h3>
+                    <p class="text-gray-400 mb-4">Certifikované znalosti v cloudu a návrh systémů, které vydrží zátěž.</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> MS Azure (Certifikace)</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Software Architecture</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Mikroservisy & Databáze</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Sítě & DevOps</li>
+                    </ul>
+                </div>
+
+                <!-- Inovace & AI -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 200ms;">
+                    <i class="fa-solid fa-robot text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Inovace & AI</h3>
+                    <p class="text-gray-400 mb-4">Aktivní využívání nejnovějších trendů pro zefektivnění vývoje a produktů.</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Vývoj AI agentů</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> AI-Assisted Development</li>
+                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Adaptabilita na nové jazyky</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="praxe" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Praxe & Vybrané Projekty</h2>
+            
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Rozsáhlé korporátní CRM</h3>
+                        <p class="text-gray-400 mb-4">
+                            Vývoj, údržba a návrh architektury rozsáhlého CRM systému v korporátním prostředí. 
+                            Důraz na vysokou dostupnost, bezpečnost dat a integraci s existujícími podnikovými systémy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Mikroservisní architektury</h3>
+                        <p class="text-gray-400 mb-4">
+                            Spolupráce na rozsáhlých projektech postavených na mikroservisní architektuře. 
+                            Řešení komunikace mezi službami, škálovatelnosti a cloudového nasazení.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Podpůrné business aplikace</h3>
+                        <p class="text-gray-400">
+                            Kompletní dodávka (od A do Z) interních nástrojů a B2B aplikací, které digitalizují 
+                            a automatizují firemní procesy s využitím moderního webového stacku a databází.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vzdělání: Opravené formátování timeline -->
+    <section id="vzdelani" class="py-20 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Vzdělání</h2>
+            
+            <ol class="relative border-l-2 border-gray-700 ml-4 md:ml-10">
+                <li class="mb-10 pl-10 md:pl-12 fade-in">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-dark border-2 border-primary rounded-full -left-[17px] ring-4 ring-darker">
+                        <i class="fa-solid fa-graduation-cap text-primary text-sm"></i>
+                    </span>
+                    <h3 class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-1 text-xl font-bold text-white pt-1">
+                        ČVUT v Praze, Fakulta informačních technologií (FIT)
+                        <span class="bg-primary/20 text-primary text-xs font-medium px-2.5 py-0.5 rounded w-max">Současnost</span>
+                    </h3>
+                    <div class="block mb-2 text-sm font-normal leading-none text-gray-500">Navazující inženýrské studium</div>
+                    <p class="text-base font-normal text-gray-400">Obor: Aplikovaná informatika</p>
+                </li>
+                
+                <li class="pl-10 md:pl-12 fade-in">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-dark border-2 border-gray-600 rounded-full -left-[17px] ring-4 ring-darker">
+                        <i class="fa-solid fa-award text-gray-400 text-sm"></i>
+                    </span>
+                    <h3 class="mb-1 text-xl font-bold text-white pt-1">ČVUT v Praze, Fakulta elektrotechnická (FEL)</h3>
+                    <div class="block mb-2 text-sm font-normal leading-none text-gray-500">Bakalářské studium</div>
+                    <p class="text-base font-normal text-gray-400 mb-3">Obor: Softwarové inženýrství a technologie</p>
+                    <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-red-900/30 text-red-400 border border-red-800/50">
+                        <i class="fa-solid fa-star"></i> Absolvováno s červeným diplomem
+                    </span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Kontakt s doplněnými údaji -->
+    <section id="kontakt" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-3xl font-bold text-white mb-6">Máte zajímavý projekt?</h2>
+            <p class="text-gray-400 text-lg mb-10">
+                Ať už potřebujete navrhnout složitou architekturu, postavit aplikaci od nuly nebo integrovat AI, 
+                jsem otevřený novým výzvám. Ozvěte se mi.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <a href="mailto:martin.goffa.dev@gmail.com" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                    martin.goffa.dev@gmail.com
+                </a>
+                
+                <a href="https://www.linkedin.com/in/martin-goffa-019901241/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                    LinkedIn profil
+                </a>
+                
+                <a href="https://github.com/goffamartin" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    GitHub profil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800 bg-darker">
+        <p>&copy; 2026 Martin Goffa. Vytvořeno s důrazem na kvalitu.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach((element) => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
