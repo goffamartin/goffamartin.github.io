@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Goffa | Software Architect & Full-stack Developer</title>
-    <meta name="description" content="Martin Goffa – software architekt a full-stack vývojář (.NET, C#, Blazor, MS Azure, AI agenti). Návrh architektury, vývoj aplikací, databáze, sítě a DevOps od A do Z.">
+    <title>Martin Goffa | Software Architect & .NET Vývojář</title>
+    <meta name="description" content="Martin Goffa – software architekt a full-stack vývojář (.NET, C#, Blazor, MS Azure, AI integrace). Návrh architektury, vývoj aplikací, databáze, sítě a DevOps od A do Z.">
     <meta name="author" content="Martin Goffa">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://dev.goffa.cz/">
@@ -12,18 +12,19 @@
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://dev.goffa.cz/">
-    <meta property="og:title" content="Martin Goffa | Software Architect & Full-stack Developer">
-    <meta property="og:description" content="Software architekt a full-stack vývojář – .NET, Blazor, MS Azure, AI agenti. Kompletní řešení od návrhu po nasazení.">
+    <meta property="og:title" content="Martin Goffa | Software Architect & .NET Vývojář">
+    <meta property="og:description" content="Software architekt a full-stack vývojář – .NET, Blazor, MS Azure, AI integrace. Kompletní řešení od návrhu po nasazení.">
     <meta property="og:image" content="https://dev.goffa.cz/assets/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Martin Goffa – Software Architect &amp; Full-stack Developer">
     <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Martin Goffa">
     <meta property="profile:first_name" content="Martin">
     <meta property="profile:last_name" content="Goffa">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Martin Goffa | Software Architect & Full-stack Developer">
-    <meta name="twitter:description" content="Software architekt a full-stack vývojář – .NET, Blazor, MS Azure, AI agenti.">
+    <meta name="twitter:title" content="Martin Goffa | Software Architect & .NET Vývojář">
+    <meta name="twitter:description" content="Software architekt a full-stack vývojář – .NET, Blazor, MS Azure, AI integrace.">
     <meta name="twitter:image" content="https://dev.goffa.cz/assets/images/og-image.png">
     
     <meta name="seznam-wmt" content="Rx2RGpBxePejvXXOEzyl1fkxbFfhCaj5" />
@@ -31,20 +32,90 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Martin Goffa",
-        "url": "https://dev.goffa.cz/",
-        "image": "https://dev.goffa.cz/assets/icons/android-chrome-512x512.png",
-        "jobTitle": "Software Architect & Full-stack Developer",
-        "email": "mailto:martin.goffa.dev@gmail.com",
-        "knowsAbout": [".NET", "C#", "Blazor", "Microsoft Azure", "Software Architecture", "Microservices", "DevOps", "AI agents"],
-        "alumniOf": [
-            { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta elektrotechnická" },
-            { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta informačních technologií" }
-        ],
-        "sameAs": [
-            "https://www.linkedin.com/in/martin-goffa-019901241/",
-            "https://github.com/goffamartin"
+        "@graph": [
+            {
+                "@type": "ProfilePage",
+                "@id": "https://dev.goffa.cz/#profilepage",
+                "url": "https://dev.goffa.cz/",
+                "name": "Martin Goffa | Software Architect & .NET Vývojář",
+                "inLanguage": "cs",
+                "isPartOf": { "@id": "https://dev.goffa.cz/#website" },
+                "mainEntity": { "@id": "https://dev.goffa.cz/#person" }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://dev.goffa.cz/#website",
+                "url": "https://dev.goffa.cz/",
+                "name": "Martin Goffa",
+                "inLanguage": "cs",
+                "publisher": { "@id": "https://dev.goffa.cz/#person" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://dev.goffa.cz/#person",
+                "name": "Martin Goffa",
+                "givenName": "Martin",
+                "familyName": "Goffa",
+                "url": "https://dev.goffa.cz/",
+                "image": "https://dev.goffa.cz/assets/icons/android-chrome-512x512.png",
+                "jobTitle": "Software Architect & Full-stack Developer",
+                "description": "Software architekt a full-stack vývojář se zaměřením na .NET, Blazor, MS Azure, AI-assisted development a integraci AI do aplikací.",
+                "disambiguatingDescription": "Český softwarový architekt a .NET vývojář, absolvent ČVUT v Praze.",
+                "email": "mailto:martin.goffa.dev@gmail.com",
+                "knowsAbout": [".NET", "C#", "Blazor", "Microsoft Azure", "Software Architecture", "Microservices", "DevOps", "AI-assisted development", "AI integration", "Model Context Protocol (MCP)"],
+                "hasCredential": {
+                    "@type": "EducationalOccupationalCredential",
+                    "name": "Microsoft Certified: Azure AI Cloud Developer Associate",
+                    "credentialCategory": "certification",
+                    "url": "https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D",
+                    "dateCreated": "2026-10-07",
+                    "expires": "2027-10-08",
+                    "recognizedBy": { "@type": "Organization", "name": "Microsoft", "sameAs": "https://www.microsoft.com/" }
+                },
+                "alumniOf": [
+                    { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta elektrotechnická", "sameAs": "https://fel.cvut.cz/" },
+                    { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta informačních technologií", "sameAs": "https://fit.cvut.cz/" }
+                ],
+                "sameAs": [
+                    "https://www.linkedin.com/in/martin-goffa-019901241/",
+                    "https://github.com/goffamartin"
+                ]
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Software Architecture – monolith/modular/microservices",
+                "description": "Přednáška Martina Goffy o softwarové architektuře: deployment, struktura kódu, tok dat a AI. HAVIT Vzdělávací okénko.",
+                "url": "https://www.youtube.com/watch?v=MCdOyduZMew",
+                "embedUrl": "https://www.youtube.com/embed/MCdOyduZMew",
+                "thumbnailUrl": "https://i.ytimg.com/vi/MCdOyduZMew/maxresdefault.jpg",
+                "uploadDate": "2026-04-16",
+                "inLanguage": "cs",
+                "creator": { "@id": "https://dev.goffa.cz/#person" },
+                "publisher": { "@type": "Organization", "name": "HAVIT, s.r.o.", "url": "https://www.havit.cz/" }
+            },
+            {
+                "@type": "VideoObject",
+                "name": ".NET Aspire Introduction",
+                "description": "Přednáška Martina Goffy – úvod do .NET Aspire. HAVIT Vzdělávací okénko.",
+                "url": "https://www.youtube.com/watch?v=vshwVZqUJnw",
+                "embedUrl": "https://www.youtube.com/embed/vshwVZqUJnw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/vshwVZqUJnw/maxresdefault.jpg",
+                "uploadDate": "2026-02-12",
+                "inLanguage": "cs",
+                "creator": { "@id": "https://dev.goffa.cz/#person" },
+                "publisher": { "@type": "Organization", "name": "HAVIT, s.r.o.", "url": "https://www.havit.cz/" }
+            },
+            {
+                "@type": "Thesis",
+                "name": "Návrh a implementace systému pro optimalizaci prodejního forecastu na bázi týdenního plánování",
+                "alternateName": "Design and Implementation of a System for Optimizing Sales Forecasting through Weekly Planning",
+                "url": "https://hdl.handle.net/10467/179978",
+                "inSupportOf": "Bakalářská práce",
+                "datePublished": "2026",
+                "inLanguage": "cs",
+                "author": { "@id": "https://dev.goffa.cz/#person" },
+                "sourceOrganization": { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta elektrotechnická" }
+            }
         ]
     }
     </script>
@@ -63,26 +134,28 @@
 </head>
 <body class="bg-darker text-gray-200 font-sans antialiased selection:bg-primary selection:text-white">
 
-    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Hlavní navigace">
             <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0 font-bold text-xl tracking-wider">
+                <a href="/" class="flex-shrink-0 font-bold text-xl tracking-wider" aria-label="Martin Goffa – úvod">
                     <span class="text-primary">&lt;</span> MartinGoffa <span class="text-primary">/&gt;</span>
-                </div>
+                </a>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#o-mne" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">O mně</a>
                         <a href="#dovednosti" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Dovednosti</a>
                         <a href="#praxe" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Praxe & Projekty</a>
+                        <a href="#prednasky" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Přednášky</a>
                         <a href="#vzdelani" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Vzdělání</a>
                         <a href="#kontakt" class="bg-primary hover:bg-sky-600 text-white px-4 py-2 rounded-md text-sm font-bold transition-colors">Kontakt</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
+    <main>
+    <section id="uvod" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
         <p class="text-primary font-semibold tracking-wide uppercase mb-3 fade-in">Software Architect & Full-stack vývojář</p>
         <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight fade-in" style="transition-delay: 100ms;">
             Martin Goffa
@@ -102,12 +175,12 @@
         <div class="max-w-4xl mx-auto px-4 text-center fade-in">
             <h2 class="text-3xl font-bold text-white mb-8">Něco málo o mně</h2>
             <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                Jsem vývojář s více než 4 lety profesionální praxe. Nestavím se jen do role programátora – jsem inženýr, 
+                Jsem Martin Goffa, vývojář s více než 4 lety profesionální praxe. Nestavím se jen do role programátora – jsem inženýr, 
                 který přebírá zodpovědnost za celý životní cyklus aplikace. Mojí doménou je backend v <strong>.NET</strong> a frontend v <strong>Blazoru</strong>, 
-                jsem certifikovaný <strong>Azure Cloud Developer</strong>.
+                jsem certifikovaný <strong>Azure AI Cloud Developer Associate</strong>.
             </p>
             <p class="text-gray-400 text-lg leading-relaxed">
-                V dnešní době AI pro mě není překážkou vyvíjet v jakékoliv technologii. Intenzivně se zabývám <strong>vývojem AI agentů</strong> 
+                V dnešní době AI pro mě není překážkou vyvíjet v jakékoliv technologii. Intenzivně se zabývám <strong>AI-assisted developmentem</strong> a <strong>integrací AI do aplikací</strong>, od MCP serverů po AI asistenty,
                 a dbám na dodávání vysoce kvalitního, čistého a udržitelného kódu. Ať už jde o databáze, sítě nebo nasazení, 
                 mám široký přesah napříč celým IT spektrem.
             </p>
@@ -121,38 +194,38 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Core Development -->
                 <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in">
-                    <i class="fa-brands fa-microsoft text-4xl text-primary mb-4"></i>
+                    <i aria-hidden="true" class="fa-brands fa-microsoft text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-3">Core Development</h3>
                     <p class="text-gray-400 mb-4">Primární zaměření na robustní technologie od Microsoftu a moderní web.</p>
                     <ul class="text-gray-300 space-y-2">
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> .NET & C#</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Blazor Frontend</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Webové technologie & API</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> .NET & C#</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Blazor Frontend</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Webové technologie & API</li>
                     </ul>
                 </div>
                 
                 <!-- Architektura & Cloud -->
                 <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 100ms;">
-                    <i class="fa-solid fa-cloud text-4xl text-primary mb-4"></i>
+                    <i aria-hidden="true" class="fa-solid fa-cloud text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-3">Architektura & Cloud</h3>
                     <p class="text-gray-400 mb-4">Certifikované znalosti v cloudu a návrh systémů, které vydrží zátěž.</p>
                     <ul class="text-gray-300 space-y-2">
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> MS Azure (Certifikace)</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Software Architecture</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Mikroservisy & Databáze</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Sítě & DevOps</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> MS Azure (Certifikace)</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Software Architecture</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Mikroservisy & Databáze</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Sítě & DevOps</li>
                     </ul>
                 </div>
 
                 <!-- Inovace & AI -->
                 <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 200ms;">
-                    <i class="fa-solid fa-robot text-4xl text-primary mb-4"></i>
+                    <i aria-hidden="true" class="fa-solid fa-robot text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-3">Inovace & AI</h3>
                     <p class="text-gray-400 mb-4">Aktivní využívání nejnovějších trendů pro zefektivnění vývoje a produktů.</p>
                     <ul class="text-gray-300 space-y-2">
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Vývoj AI agentů</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> AI-Assisted Development</li>
-                        <li><i class="fa-solid fa-check text-primary mr-2"></i> Adaptabilita na nové jazyky</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> AI-Assisted Development</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> AI integrace do aplikací</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> MCP servery & AI asistenti</li>
                     </ul>
                 </div>
             </div>
@@ -164,9 +237,9 @@
             <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Praxe & Vybrané Projekty</h2>
             
             <div class="space-y-8 max-w-4xl mx-auto">
-                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
                     <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
-                        <i class="fa-solid fa-users-gear"></i>
+                        <i aria-hidden="true" class="fa-solid fa-users-gear"></i>
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-2">Rozsáhlé korporátní CRM</h3>
@@ -175,11 +248,11 @@
                             Důraz na vysokou dostupnost, bezpečnost dat a integraci s existujícími podnikovými systémy.
                         </p>
                     </div>
-                </div>
+                </article>
 
-                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
                     <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
-                        <i class="fa-solid fa-network-wired"></i>
+                        <i aria-hidden="true" class="fa-solid fa-network-wired"></i>
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-2">Mikroservisní architektury</h3>
@@ -188,11 +261,11 @@
                             Řešení komunikace mezi službami, škálovatelnosti a cloudového nasazení.
                         </p>
                     </div>
-                </div>
+                </article>
 
-                <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
                     <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
-                        <i class="fa-solid fa-briefcase"></i>
+                        <i aria-hidden="true" class="fa-solid fa-briefcase"></i>
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-2">Podpůrné business aplikace</h3>
@@ -201,20 +274,76 @@
                             a automatizují firemní procesy s využitím moderního webového stacku a databází.
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Vzdělání: Opravené formátování timeline -->
-    <section id="vzdelani" class="py-20 border-t border-gray-800">
+    <section id="prednasky" class="py-20 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center fade-in">Přednášky & Videa</h2>
+            <p class="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-12 fade-in">
+                Přednášky pro kolegy vývojáře, které připravuji v rámci série <strong>HAVIT Vzdělávací okénko</strong>.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <article class="bg-dark rounded-xl border border-gray-800 hover:border-primary/50 transition-colors overflow-hidden fade-in">
+                    <a href="https://www.youtube.com/watch?v=MCdOyduZMew" target="_blank" rel="noopener noreferrer" class="group block">
+                        <div class="video-cover relative aspect-video flex flex-col items-center justify-center gap-4 border-b border-gray-800">
+                            <span class="absolute top-4 left-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 border border-primary/30 rounded-full px-3 py-1">Vzdělávací okénko</span>
+                            <span class="w-20 h-20 flex items-center justify-center rounded-2xl bg-darker/80 border border-primary/40 shadow-lg shadow-primary/20 text-primary text-4xl group-hover:scale-105 transition-transform">
+                                <i aria-hidden="true" class="fa-solid fa-layer-group"></i>
+                            </span>
+                            <span class="text-sm font-medium tracking-wide text-gray-300">Monolit · Modulární monolit · Mikroservisy</span>
+                            <span class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 group-hover:scale-110 group-hover:bg-sky-500 transition-all">
+                                <i aria-hidden="true" class="fa-solid fa-play ml-0.5"></i>
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Software Architecture – monolit, modulární monolit, mikroservisy</h3>
+                            <p class="text-gray-400 mb-3">Deployment, struktura kódu, tok dat a AI – jak navrhovat systémy nejen pro lidi, ale i pro AI.</p>
+                            <p class="text-sm text-gray-500"><time datetime="2026-04-16">16. 4. 2026</time> · HAVIT Vzdělávací okénko</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="bg-dark rounded-xl border border-gray-800 hover:border-primary/50 transition-colors overflow-hidden fade-in" style="transition-delay: 100ms;">
+                    <a href="https://www.youtube.com/watch?v=vshwVZqUJnw" target="_blank" rel="noopener noreferrer" class="group block">
+                        <div class="video-cover relative aspect-video flex flex-col items-center justify-center gap-4 border-b border-gray-800">
+                            <span class="absolute top-4 left-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 border border-primary/30 rounded-full px-3 py-1">Vzdělávací okénko</span>
+                            <span class="w-20 h-20 flex items-center justify-center rounded-2xl bg-darker/80 border border-primary/40 shadow-lg shadow-primary/20 text-primary text-4xl group-hover:scale-105 transition-transform">
+                                <i aria-hidden="true" class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="text-sm font-medium tracking-wide text-gray-300">.NET · Orchestrace · Cloud</span>
+                            <span class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 group-hover:scale-110 group-hover:bg-sky-500 transition-all">
+                                <i aria-hidden="true" class="fa-solid fa-play ml-0.5"></i>
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">.NET Aspire Introduction</h3>
+                            <p class="text-gray-400 mb-3">Úvod do .NET Aspire – vývoj, orchestrace a nasazení distribuovaných .NET aplikací.</p>
+                            <p class="text-sm text-gray-500"><time datetime="2026-02-12">12. 2. 2026</time> · HAVIT Vzdělávací okénko</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <p class="text-center mt-10 fade-in">
+                <a href="https://www.youtube.com/@HAVITCZ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-sky-400 transition-colors">
+                    <i aria-hidden="true" class="fa-brands fa-youtube"></i> Další videa na YouTube kanálu HAVIT
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section id="vzdelani" class="py-20 bg-dark border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Vzdělání</h2>
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">Vzdělání &amp; Certifikace</h2>
             
             <ol class="relative border-l-2 border-gray-700 ml-4 md:ml-10">
                 <li class="mb-10 pl-10 md:pl-12 fade-in">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-dark border-2 border-primary rounded-full -left-[17px] ring-4 ring-darker">
-                        <i class="fa-solid fa-graduation-cap text-primary text-sm"></i>
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-darker border-2 border-primary rounded-full -left-[17px] ring-4 ring-dark">
+                        <i aria-hidden="true" class="fa-solid fa-graduation-cap text-primary text-sm"></i>
                     </span>
                     <h3 class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-1 text-xl font-bold text-white pt-1">
                         ČVUT v Praze, Fakulta informačních technologií (FIT)
@@ -225,22 +354,45 @@
                 </li>
                 
                 <li class="pl-10 md:pl-12 fade-in">
-                    <span class="absolute flex items-center justify-center w-8 h-8 bg-dark border-2 border-gray-600 rounded-full -left-[17px] ring-4 ring-darker">
-                        <i class="fa-solid fa-award text-gray-400 text-sm"></i>
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-darker border-2 border-gray-600 rounded-full -left-[17px] ring-4 ring-dark">
+                        <i aria-hidden="true" class="fa-solid fa-award text-gray-400 text-sm"></i>
                     </span>
                     <h3 class="mb-1 text-xl font-bold text-white pt-1">ČVUT v Praze, Fakulta elektrotechnická (FEL)</h3>
                     <div class="block mb-2 text-sm font-normal leading-none text-gray-500">Bakalářské studium</div>
-                    <p class="text-base font-normal text-gray-400 mb-3">Obor: Softwarové inženýrství a technologie</p>
+                    <p class="text-base font-normal text-gray-400 mb-2">Obor: Softwarové inženýrství a technologie</p>
+                    <p class="text-base font-normal text-gray-400 mb-3">
+                        Bakalářská práce:
+                        <a href="https://hdl.handle.net/10467/179978" target="_blank" rel="noopener noreferrer" class="text-gray-300 underline decoration-gray-600 underline-offset-4 hover:text-primary hover:decoration-primary transition-colors">Návrh a implementace systému pro optimalizaci prodejního forecastu na bázi týdenního plánování</a>
+                    </p>
                     <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-red-900/30 text-red-400 border border-red-800/50">
-                        <i class="fa-solid fa-star"></i> Absolvováno s červeným diplomem
+                        <i aria-hidden="true" class="fa-solid fa-star"></i> Absolvováno s červeným diplomem
                     </span>
                 </li>
             </ol>
+
+            <h3 class="text-2xl font-bold text-white mt-16 mb-8 text-center fade-in">Certifikace</h3>
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col sm:flex-row items-center gap-8 fade-in">
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="shrink-0 transition-transform hover:scale-105">
+                    <img src="/assets/images/microsoft-certified-associate-badge.svg" alt="Odznak Microsoft Certified: Associate – ověřit certifikát" width="120" height="120" class="w-28 h-28">
+                </a>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-xl font-bold text-white mb-2">Microsoft Certified: Azure AI Cloud Developer Associate</h4>
+                    <p class="text-gray-400 mb-4">Získáno v říjnu 2026 · platné do října 2027</p>
+                    <ul class="text-gray-300 space-y-1 text-sm">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Kontejnerizovaná řešení na Azure</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> AI řešení nad datovými službami Azure</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Integrace a využívání služeb Azure</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Zabezpečení, monitoring a ladění řešení na Azure</li>
+                    </ul>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-primary hover:text-sky-400 transition-colors">
+                        <i aria-hidden="true" class="fa-solid fa-circle-check"></i> Ověřit certifikát na Microsoft Learn
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Kontakt s doplněnými údaji -->
-    <section id="kontakt" class="py-20 bg-dark border-t border-gray-800">
+    <section id="kontakt" class="py-20 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-4 text-center fade-in">
             <h2 class="text-3xl font-bold text-white mb-6">Máte zajímavý projekt?</h2>
             <p class="text-gray-400 text-lg mb-10">
@@ -248,24 +400,25 @@
                 jsem otevřený novým výzvám. Ozvěte se mi.
             </p>
             
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            <address class="not-italic flex flex-col md:flex-row justify-center items-center gap-8">
                 <a href="mailto:martin.goffa.dev@gmail.com" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
-                    <i class="fa-solid fa-envelope text-2xl"></i>
+                    <i aria-hidden="true" class="fa-solid fa-envelope text-2xl"></i>
                     martin.goffa.dev@gmail.com
                 </a>
                 
-                <a href="https://www.linkedin.com/in/martin-goffa-019901241/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
-                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                <a href="https://www.linkedin.com/in/martin-goffa-019901241/" target="_blank" rel="me noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i aria-hidden="true" class="fa-brands fa-linkedin text-2xl"></i>
                     LinkedIn profil
                 </a>
                 
-                <a href="https://github.com/goffamartin" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
-                    <i class="fa-brands fa-github text-2xl"></i>
+                <a href="https://github.com/goffamartin" target="_blank" rel="me noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i aria-hidden="true" class="fa-brands fa-github text-2xl"></i>
                     GitHub profil
                 </a>
-            </div>
+            </address>
         </div>
     </section>
+    </main>
 
     <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800 bg-darker">
         <p>&copy; 2026 Martin Goffa. Vytvořeno s důrazem na kvalitu.</p>
