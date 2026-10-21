@@ -31,7 +31,7 @@ GitHub Pages publishes the repository root, so the files above that the site ser
 ```sh
 npm install
 npm run watch:css     # rebuild CSS while editing
-npm run build:css     # minified build – run before committing
+npm run build:css     # minified build + cache-busting hash in index.html – run before committing
 npm run copy:vendor   # only after updating Inter or Font Awesome
 ```
 
