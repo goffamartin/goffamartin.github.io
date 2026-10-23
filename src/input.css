@@ -20,14 +20,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.fade-in {
+/* Content is hidden for the fade-in only when JavaScript runs (html.js), so it stays
+   visible without JS – for crawlers that don't execute scripts or scroll */
+.js .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-.fade-in.visible {
+.js .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+    .js .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 /* Video card cover – replaces YouTube thumbnails with a design matching the site */
