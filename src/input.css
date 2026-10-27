@@ -49,3 +49,78 @@
         linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
     background-size: auto, auto, 32px 32px, 32px 32px;
 }
+
+/* Work experience timeline – vertical line on the left on mobile, centered with alternating cards from md up */
+.timeline {
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.75rem;
+    width: 2px;
+    background: linear-gradient(to bottom, #0ea5e9, rgba(14, 165, 233, 0.15));
+}
+.timeline-item {
+    position: relative;
+    padding-left: 2.75rem;
+}
+.timeline-item + .timeline-item {
+    margin-top: 2.5rem;
+}
+.timeline-dot {
+    position: absolute;
+    left: 0.75rem;
+    top: 1.75rem;
+    width: 1rem;
+    height: 1rem;
+    transform: translateX(-50%);
+    border-radius: 9999px;
+    background: #0f172a;
+    border: 2px solid #0ea5e9;
+    box-shadow: 0 0 0 4px #0f172a;
+}
+.timeline-dot-current {
+    background: #0ea5e9;
+}
+.timeline-date {
+    display: none;
+}
+/* Positions after the first two are collapsed until the toggle expands the timeline (only when JS runs) */
+.js .timeline:not(.is-expanded) .timeline-item:nth-child(n+3) {
+    display: none;
+}
+@media (min-width: 768px) {
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .timeline-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        padding-left: 0;
+    }
+    .timeline-dot {
+        left: 50%;
+    }
+    .timeline-date {
+        display: block;
+        padding-top: 1.25rem;
+    }
+    .timeline-item:nth-child(odd) .timeline-date {
+        order: 1;
+        text-align: right;
+    }
+    .timeline-item:nth-child(odd) .timeline-card {
+        order: 2;
+    }
+    .timeline-item:nth-child(even) .timeline-date {
+        order: 2;
+    }
+    .timeline-item:nth-child(even) .timeline-card {
+        order: 1;
+    }
+}
