@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+{{generatedNotice}}
+<html lang="{{meta.lang}}" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta name="author" content="Martin Goffa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{meta.url}}">
+    <link rel="alternate" hreflang="cs" href="https://dev.goffa.cz/">
+    <link rel="alternate" hreflang="en" href="https://dev.goffa.cz/en/">
+    <link rel="alternate" hreflang="x-default" href="https://dev.goffa.cz/">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{meta.url}}">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:description" content="{{meta.ogDescription}}">
+    <meta property="og:image" content="https://dev.goffa.cz{{meta.ogImagePath}}">
+    <meta property="og:image:secure_url" content="https://dev.goffa.cz{{meta.ogImagePath}}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{meta.ogImageAlt}}">
+    <meta property="og:locale" content="{{meta.ogLocale}}">
+    <meta property="og:locale:alternate" content="{{meta.ogLocaleAlternate}}">
+    <meta property="og:site_name" content="Martin Goffa">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{meta.title}}">
+    <meta name="twitter:description" content="{{meta.twitterDescription}}">
+    <meta name="twitter:image" content="https://dev.goffa.cz{{meta.ogImagePath}}">
+    
+    <meta name="seznam-wmt" content="Rx2RGpBxePejvXXOEzyl1fkxbFfhCaj5" />
+    <!-- Structured data (Google rich results / Knowledge Panel) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfilePage",
+                "@id": "{{meta.url}}#profilepage",
+                "url": "{{meta.url}}",
+                "name": "{{meta.title}}",
+                "inLanguage": "{{meta.lang}}",
+                "isPartOf": { "@id": "https://dev.goffa.cz/#website" },
+                "mainEntity": { "@id": "https://dev.goffa.cz/#person" }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://dev.goffa.cz/#website",
+                "url": "https://dev.goffa.cz/",
+                "name": "Martin Goffa",
+                "inLanguage": ["cs", "en"],
+                "publisher": { "@id": "https://dev.goffa.cz/#person" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://dev.goffa.cz/#person",
+                "name": "Martin Goffa",
+                "givenName": "Martin",
+                "familyName": "Goffa",
+                "url": "https://dev.goffa.cz/",
+                "image": "https://dev.goffa.cz/assets/images/martin-goffa-portrait.jpg",
+                "jobTitle": "Software Architect & Full-stack Developer",
+                "description": "{{ld.personDescription}}",
+                "disambiguatingDescription": "{{ld.personDisambiguatingDescription}}",
+                "email": "mailto:martin.goffa.dev@gmail.com",
+                "address": { "@type": "PostalAddress", "addressLocality": "{{ld.locality}}", "addressCountry": "CZ" },
+                "worksFor": { "@type": "Organization", "name": "HAVIT, s.r.o.", "url": "https://www.havit.cz/" },
+                "knowsAbout": [".NET", "C#", "ASP.NET", "Blazor", "Microsoft Azure", "Azure Networking", "WPF", "XAML", "Software Architecture", "Microservices", "DevOps", "AI-assisted development", "AI integration", "Model Context Protocol (MCP)"],
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "Microsoft Certified: Azure Network Engineer Associate",
+                        "credentialCategory": "certification",
+                        "url": "https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/F4D0DBA061187ECA?sharingId=10FAE2DAC5A3378D",
+                        "dateCreated": "2026-10-27",
+                        "expires": "2027-10-28",
+                        "recognizedBy": { "@type": "Organization", "name": "Microsoft", "sameAs": "https://www.microsoft.com/" }
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "name": "Microsoft Certified: Azure AI Cloud Developer Associate",
+                        "credentialCategory": "certification",
+                        "url": "https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D",
+                        "dateCreated": "2026-10-07",
+                        "expires": "2027-10-08",
+                        "recognizedBy": { "@type": "Organization", "name": "Microsoft", "sameAs": "https://www.microsoft.com/" }
+                    }
+                ],
+                "alumniOf": [
+                    { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta elektrotechnická", "sameAs": "https://fel.cvut.cz/" },
+                    { "@type": "HighSchool", "name": "Smíchovská střední průmyslová škola", "sameAs": "https://www.ssps.cz/" }
+                ],
+                "affiliation": { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta informačních technologií", "sameAs": "https://fit.cvut.cz/" },
+                "sameAs": [
+                    "https://www.linkedin.com/in/martin-goffa-019901241/",
+                    "https://github.com/goffamartin"
+                ]
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Software Architecture – monolith / modular / microservices",
+                "description": "{{ld.video1Description}}",
+                "url": "https://www.youtube.com/watch?v=MCdOyduZMew",
+                "embedUrl": "https://www.youtube.com/embed/MCdOyduZMew",
+                "thumbnailUrl": "https://i.ytimg.com/vi/MCdOyduZMew/maxresdefault.jpg",
+                "uploadDate": "2026-05-06T09:08:57-07:00",
+                "inLanguage": "cs",
+                "creator": { "@id": "https://dev.goffa.cz/#person" },
+                "publisher": { "@type": "Organization", "name": "HAVIT, s.r.o.", "url": "https://www.havit.cz/" }
+            },
+            {
+                "@type": "VideoObject",
+                "name": ".NET Aspire Introduction",
+                "description": "{{ld.video2Description}}",
+                "url": "https://www.youtube.com/watch?v=vshwVZqUJnw",
+                "embedUrl": "https://www.youtube.com/embed/vshwVZqUJnw",
+                "thumbnailUrl": "https://i.ytimg.com/vi/vshwVZqUJnw/maxresdefault.jpg",
+                "uploadDate": "2026-03-13T05:19:07-07:00",
+                "inLanguage": "cs",
+                "creator": { "@id": "https://dev.goffa.cz/#person" },
+                "publisher": { "@type": "Organization", "name": "HAVIT, s.r.o.", "url": "https://www.havit.cz/" }
+            },
+            {
+                "@type": "Thesis",
+                "name": "Návrh a implementace systému pro optimalizaci prodejního forecastu na bázi týdenního plánování",
+                "alternateName": "Design and Implementation of a System for Optimizing Sales Forecasting through Weekly Planning",
+                "url": "https://hdl.handle.net/10467/179978",
+                "inSupportOf": "{{ld.thesisInSupportOf}}",
+                "datePublished": "2026",
+                "inLanguage": "cs",
+                "author": { "@id": "https://dev.goffa.cz/#person" },
+                "sourceOrganization": { "@type": "CollegeOrUniversity", "name": "České vysoké učení technické v Praze, Fakulta elektrotechnická" }
+            }
+        ]
+    }
+    </script>
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+    <!-- Generated by Tailwind CLI from src/input.css – run `npm run build` after changing classes -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Fonts and icons are self-hosted (copied by `npm run copy:vendor`) so the page needs no third-party DNS lookups -->
+    <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
+</head>
+<body class="bg-darker text-gray-200 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <header class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="{{nav.ariaLabel}}">
+            <div class="flex items-center justify-between h-16">
+                <a href="{{meta.home}}" class="flex-shrink-0 font-bold text-xl tracking-wider" aria-label="{{nav.homeLabel}}">
+                    <span class="text-primary">&lt;</span> Martin Goffa <span class="text-primary">/&gt;</span>
+                </a>
+                <div class="flex items-center gap-4 md:gap-6">
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#o-mne" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">{{nav.about}}</a>
+                        <a href="#dovednosti" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">{{nav.skills}}</a>
+                        <a href="#praxe" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">{{nav.experience}}</a>
+                        <a href="#prednasky" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">{{nav.talks}}</a>
+                        <a href="#vzdelani" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">{{nav.education}}</a>
+                        <a href="#kontakt" class="bg-primary hover:bg-sky-600 text-white px-4 py-2 rounded-md text-sm font-bold transition-colors">{{nav.contact}}</a>
+                    </div>
+                </div>
+                <div class="flex items-center rounded-full border border-gray-700 p-0.5 text-xs font-bold" aria-label="{{nav.languageLabel}}">
+                    {{languageSwitcher}}
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <section id="uvod" class="pt-32 pb-20 md:pt-44 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-20">
+        <div class="relative shrink-0 fade-in mr-4 mb-4 md:mr-6 md:mb-6">
+            <div class="absolute -inset-8 rounded-[2rem] bg-primary/20 blur-3xl" aria-hidden="true"></div>
+            <div class="absolute inset-0 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 rounded-3xl border-2 border-primary/60" aria-hidden="true"></div>
+            <img src="/assets/images/martin-goffa-portrait.jpg" alt="{{hero.photoAlt}}" width="600" height="750" fetchpriority="high"
+                 class="relative w-56 md:w-72 lg:w-80 aspect-[4/5] rounded-3xl object-cover shadow-2xl shadow-black/50">
+        </div>
+        <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <p class="text-primary font-semibold tracking-wide uppercase mb-3 fade-in">{{hero.role}}</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight fade-in" style="transition-delay: 100ms;">
+                Martin Goffa
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 mb-10 fade-in" style="transition-delay: 200ms;">{{hero.intro}}</p>
+            <div class="flex space-x-4 fade-in" style="transition-delay: 300ms;">
+                <a href="#kontakt" class="bg-primary hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-primary/30 transition-all hover:-translate-y-1">{{hero.cta}}</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-mne" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-3xl font-bold text-white mb-8">{{about.title}}</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-6">{{about.p1}}</p>
+            <p class="text-gray-400 text-lg leading-relaxed">{{about.p2}}</p>
+        </div>
+    </section>
+
+    <section id="dovednosti" class="py-20 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">{{skills.title}}</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Core Development -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in">
+                    <i aria-hidden="true" class="fa-brands fa-microsoft text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Core Development</h3>
+                    <p class="text-gray-400 mb-4">{{skills.core.text}}</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> .NET & C#</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Blazor Frontend</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.core.web}}</li>
+                    </ul>
+                </div>
+                
+                <!-- Architektura & Cloud -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 100ms;">
+                    <i aria-hidden="true" class="fa-solid fa-cloud text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">{{skills.arch.title}}</h3>
+                    <p class="text-gray-400 mb-4">{{skills.arch.text}}</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.arch.azure}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> Software Architecture</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.arch.microservices}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.arch.networks}}</li>
+                    </ul>
+                </div>
+
+                <!-- Inovace & AI -->
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors fade-in" style="transition-delay: 200ms;">
+                    <i aria-hidden="true" class="fa-solid fa-robot text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">{{skills.ai.title}}</h3>
+                    <p class="text-gray-400 mb-4">{{skills.ai.text}}</p>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> AI-Assisted Development</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.ai.integration}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{skills.ai.mcp}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="praxe" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">{{experience.title}}</h2>
+
+            <!-- Work experience timeline, newest first. To add a position, copy one <li class="timeline-item"> block to the top
+                 and remove the "current" badge and the timeline-dot-current class from the previous current one.
+                 The first two positions are always visible, older ones are collapsed behind the toggle;
+                 the left/right alternation and the toggle's count are automatic. -->
+            <ol id="experience-timeline" class="timeline max-w-5xl mx-auto">
+                <li class="timeline-item fade-in">
+                    <span class="timeline-dot timeline-dot-current" aria-hidden="true">
+                        <span class="absolute inset-0 rounded-full bg-primary opacity-75 animate-ping"></span>
+                    </span>
+                    <div class="timeline-date">
+                        <p class="text-2xl font-extrabold text-white">{{experience.havit.period}}</p>
+                        <p class="text-sm text-gray-500 mt-1">{{experience.havit.type}}</p>
+                    </div>
+                    <article class="timeline-card bg-darker p-6 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="shrink-0 w-16 h-12 sm:w-24 sm:h-14 flex items-center justify-center rounded-lg bg-white p-1.5 sm:p-2.5">
+                                <img src="/assets/images/logos/havit.svg" alt="Logo HAVIT" width="96" height="56" class="max-h-full w-auto" loading="lazy">
+                            </span>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">{{experience.havit.role}}</h3>
+                                <p class="text-primary font-semibold">HAVIT, s.r.o.</p>
+                            </div>
+                        </div>
+                        <p class="md:hidden flex items-center gap-2 text-sm text-gray-500 mb-3">{{experience.havit.mobilePeriod}}
+                            <span class="bg-primary/20 text-primary text-xs font-medium px-2.5 py-0.5 rounded">{{common.current}}</span></p>
+                        <p class="text-gray-400 mb-3">{{experience.havit.text}}</p>
+                        <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.havit.point1}}</span></li>
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.havit.point2}}</span></li>
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.havit.point3}}</span></li>
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.havit.point4}}</span></li>
+                        </ul>
+                        <ul class="flex flex-wrap gap-2" aria-label="{{common.technologiesLabel}}">
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">C#</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">ASP.NET</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Blazor</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Azure</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">AI Agents</li>
+                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item fade-in">
+                    <span class="timeline-dot" aria-hidden="true">
+                    </span>
+                    <div class="timeline-date">
+                        <p class="text-2xl font-extrabold text-white">7/2022 – 6/2025</p>
+                        <p class="text-sm text-gray-500 mt-1">{{experience.siemens.type}}</p>
+                    </div>
+                    <article class="timeline-card bg-darker p-6 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="shrink-0 w-16 h-12 sm:w-24 sm:h-14 flex items-center justify-center rounded-lg bg-white p-1.5 sm:p-2.5">
+                                <img src="/assets/images/logos/siemens.svg" alt="Logo Siemens Digital Industries Software" width="96" height="56" class="max-h-full w-auto" loading="lazy">
+                            </span>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">C# .NET Developer</h3>
+                                <p class="text-primary font-semibold">Siemens Digital Industries Software</p>
+                            </div>
+                        </div>
+                        <p class="md:hidden flex items-center gap-2 text-sm text-gray-500 mb-3">{{experience.siemens.mobilePeriod}}</p>
+                        <p class="text-gray-400 mb-3">{{experience.siemens.text}}</p>
+                        <ul class="text-gray-300 text-sm space-y-2 mb-4">
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.siemens.point1}}</span></li>
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.siemens.point2}}</span></li>
+                            <li class="flex"><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2 mt-1"></i><span>{{experience.siemens.point3}}</span></li>
+                        </ul>
+                        <ul class="flex flex-wrap gap-2" aria-label="{{common.technologiesLabel}}">
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">C#</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">.NET</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">WPF</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">ASP.NET</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Blazor</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Azure</li>                        </ul>
+                    </article>
+                </li>
+
+                <li class="timeline-item fade-in">
+                    <span class="timeline-dot" aria-hidden="true">
+                    </span>
+                    <div class="timeline-date">
+                        <p class="text-2xl font-extrabold text-white">10/2020 – 6/2022</p>
+                        <p class="text-sm text-gray-500 mt-1">{{experience.ddm.type}}</p>
+                    </div>
+                    <article class="timeline-card bg-darker p-6 rounded-xl border border-gray-800 hover:border-primary/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="shrink-0 w-16 h-12 sm:w-24 sm:h-14 flex items-center justify-center rounded-lg bg-white p-1.5 sm:p-2.5">
+                                <img src="/assets/images/logos/ddm-praha-5.png" alt="Logo Dům dětí a mládeže Praha 5" width="420" height="317" class="max-h-full w-auto" loading="lazy">
+                            </span>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">{{experience.ddm.role}}</h3>
+                                <p class="text-primary font-semibold">Dům dětí a mládeže Praha 5</p>
+                            </div>
+                        </div>
+                        <p class="md:hidden flex items-center gap-2 text-sm text-gray-500 mb-3">{{experience.ddm.mobilePeriod}}</p>
+                        <p class="text-gray-400 mb-4">{{experience.ddm.text}}</p>
+                        <ul class="flex flex-wrap gap-2" aria-label="{{common.technologiesLabel}}">
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">C#</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">OOP</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">WPF</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">XAML</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Xamarin</li>
+                                <li class="text-xs font-medium text-gray-300 bg-gray-800 rounded-full px-3 py-1">Android</li>
+                        </ul>
+                    </article>
+                </li>
+            </ol>
+            <div class="text-center mt-10 mb-20">
+                <button type="button" class="timeline-toggle inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-sky-400 border border-primary/40 hover:border-primary rounded-full px-5 py-2 transition-colors" aria-controls="experience-timeline" aria-expanded="false" data-label-expand="{{experience.showHistory}}" data-label-collapse="{{experience.hideHistory}}" hidden>
+                    <span class="timeline-toggle-label"></span>
+                    <i aria-hidden="true" class="fa-solid fa-chevron-down transition-transform"></i>
+                </button>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-8 text-center fade-in">{{projects.title}}</h3>
+
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i aria-hidden="true" class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">{{projects.crm.title}}</h4>
+                        <p class="text-gray-400 mb-4">{{projects.crm.text}}</p>
+                    </div>
+                </article>
+
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i aria-hidden="true" class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">{{projects.microservices.title}}</h4>
+                        <p class="text-gray-400 mb-4">{{projects.microservices.text}}</p>
+                    </div>
+                </article>
+
+                <article class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col md:flex-row gap-6 items-start fade-in">
+                    <div class="bg-gray-800 p-4 rounded-lg text-primary text-2xl shrink-0">
+                        <i aria-hidden="true" class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2">{{projects.business.title}}</h4>
+                        <p class="text-gray-400">{{projects.business.text}}</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="prednasky" class="py-20 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center fade-in">{{talks.title}}</h2>
+            <p class="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-12 fade-in">{{talks.intro}}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <article class="bg-dark rounded-xl border border-gray-800 hover:border-primary/50 transition-colors overflow-hidden fade-in">
+                    <a href="https://www.youtube.com/watch?v=MCdOyduZMew" target="_blank" rel="noopener noreferrer" class="group block">
+                        <div class="video-cover relative aspect-video flex flex-col items-center justify-center gap-4 border-b border-gray-800">
+                            <span class="absolute top-4 left-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 border border-primary/30 rounded-full px-3 py-1">{{talks.badge}}</span>
+                            <span class="w-20 h-20 flex items-center justify-center rounded-2xl bg-darker/80 border border-primary/40 shadow-lg shadow-primary/20 text-primary text-4xl group-hover:scale-105 transition-transform">
+                                <i aria-hidden="true" class="fa-solid fa-layer-group"></i>
+                            </span>
+                            <span class="text-sm font-medium tracking-wide text-gray-300">{{talks.video1.keywords}}</span>
+                            <span class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 group-hover:scale-110 group-hover:bg-sky-500 transition-all">
+                                <i aria-hidden="true" class="fa-solid fa-play ml-0.5"></i>
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Software Architecture – monolith / modular / microservices</h3>
+                            <p class="text-gray-400 mb-3">{{talks.video1.text}}</p>
+                            <p class="text-sm text-gray-500"><time datetime="2026-04-16">{{talks.video1.date}}</time> · HAVIT Vzdělávací okénko{{talks.languageNote}}</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="bg-dark rounded-xl border border-gray-800 hover:border-primary/50 transition-colors overflow-hidden fade-in" style="transition-delay: 100ms;">
+                    <a href="https://www.youtube.com/watch?v=vshwVZqUJnw" target="_blank" rel="noopener noreferrer" class="group block">
+                        <div class="video-cover relative aspect-video flex flex-col items-center justify-center gap-4 border-b border-gray-800">
+                            <span class="absolute top-4 left-4 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 border border-primary/30 rounded-full px-3 py-1">{{talks.badge}}</span>
+                            <span class="w-20 h-20 flex items-center justify-center rounded-2xl bg-darker/80 border border-primary/40 shadow-lg shadow-primary/20 text-primary text-4xl group-hover:scale-105 transition-transform">
+                                <i aria-hidden="true" class="fa-solid fa-cubes"></i>
+                            </span>
+                            <span class="text-sm font-medium tracking-wide text-gray-300">{{talks.video2.keywords}}</span>
+                            <span class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 group-hover:scale-110 group-hover:bg-sky-500 transition-all">
+                                <i aria-hidden="true" class="fa-solid fa-play ml-0.5"></i>
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">.NET Aspire Introduction</h3>
+                            <p class="text-gray-400 mb-3">{{talks.video2.text}}</p>
+                            <p class="text-sm text-gray-500"><time datetime="2026-02-12">{{talks.video2.date}}</time> · HAVIT Vzdělávací okénko{{talks.languageNote}}</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <p class="text-center mt-10 fade-in">
+                <a href="https://www.youtube.com/@HAVITCZ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-sky-400 transition-colors">
+                    <i aria-hidden="true" class="fa-brands fa-youtube"></i> {{talks.more}}
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section id="vzdelani" class="py-20 bg-dark border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-in">{{education.title}}</h2>
+            
+            <ol class="relative border-l-2 border-gray-700 ml-4 md:ml-10">
+                <li class="mb-10 pl-10 md:pl-12 fade-in">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-darker border-2 border-primary rounded-full -left-[17px] ring-4 ring-dark">
+                        <i aria-hidden="true" class="fa-solid fa-graduation-cap text-primary text-sm"></i>
+                    </span>
+                    <h3 class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-1 text-xl font-bold text-white pt-1">{{education.fit.name}}
+                        <span class="bg-primary/20 text-primary text-xs font-medium px-2.5 py-0.5 rounded w-max">{{common.current}}</span>
+                    </h3>
+                    <div class="block mb-2 text-sm font-normal leading-none text-gray-500">{{education.fit.level}}</div>
+                    <p class="text-base font-normal text-gray-400">{{education.fit.field}}</p>
+                </li>
+
+                <li class="mb-10 pl-10 md:pl-12 fade-in">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-darker border-2 border-gray-600 rounded-full -left-[17px] ring-4 ring-dark">
+                        <i aria-hidden="true" class="fa-solid fa-award text-gray-400 text-sm"></i>
+                    </span>
+                    <h3 class="mb-1 text-xl font-bold text-white pt-1">{{education.fel.name}}</h3>
+                    <div class="block mb-2 text-sm font-normal leading-none text-gray-500">{{education.fel.level}}</div>
+                    <p class="text-base font-normal text-gray-400 mb-2">{{education.fel.field}}</p>
+                    <p class="text-base font-normal text-gray-400 mb-3">
+                        {{education.fel.thesisLabel}}
+                        <a href="https://hdl.handle.net/10467/179978" target="_blank" rel="noopener noreferrer" class="text-gray-300 underline decoration-gray-600 underline-offset-4 hover:text-primary hover:decoration-primary transition-colors">{{education.fel.thesisTitle}}</a>
+                    </p>
+                    <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-red-900/30 text-red-400 border border-red-800/50">
+                        <i aria-hidden="true" class="fa-solid fa-star"></i> {{education.fel.honours}}
+                    </span>
+                </li>
+
+                <li class="pl-10 md:pl-12 fade-in">
+                    <span class="absolute flex items-center justify-center w-8 h-8 bg-darker border-2 border-gray-600 rounded-full -left-[17px] ring-4 ring-dark">
+                        <i aria-hidden="true" class="fa-solid fa-school text-gray-400 text-sm"></i>
+                    </span>
+                    <h3 class="mb-1 text-xl font-bold text-white pt-1">{{education.ssps.name}}</h3>
+                    <div class="block mb-2 text-sm font-normal leading-none text-gray-500">{{education.ssps.level}}</div>
+                    <p class="text-base font-normal text-gray-400">{{education.ssps.field}}</p>
+                </li>
+            </ol>
+
+            <h3 class="text-2xl font-bold text-white mt-16 mb-8 text-center fade-in">{{certs.title}}</h3>
+            <div class="space-y-6">
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col sm:flex-row items-center gap-8 fade-in">
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/F4D0DBA061187ECA?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="shrink-0 transition-transform hover:scale-105">
+                    <img src="/assets/images/microsoft-certified-associate-badge.svg" alt="{{certs.network.badgeAlt}}" width="120" height="120" class="w-28 h-28">
+                </a>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-xl font-bold text-white mb-2">Microsoft Certified: Azure Network Engineer Associate</h4>
+                    <p class="text-gray-400 mb-4">{{certs.validity}}</p>
+                    <ul class="text-gray-300 space-y-1 text-sm">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.network.skill1}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.network.skill2}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.network.skill3}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.network.skill4}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.network.skill5}}</li>
+                    </ul>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/F4D0DBA061187ECA?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-primary hover:text-sky-400 transition-colors">
+                        <i aria-hidden="true" class="fa-solid fa-circle-check"></i> {{certs.verify}}
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 flex flex-col sm:flex-row items-center gap-8 fade-in">
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="shrink-0 transition-transform hover:scale-105">
+                    <img src="/assets/images/microsoft-certified-associate-badge.svg" alt="{{certs.ai.badgeAlt}}" width="120" height="120" class="w-28 h-28">
+                </a>
+                <div class="text-center sm:text-left">
+                    <h4 class="text-xl font-bold text-white mb-2">Microsoft Certified: Azure AI Cloud Developer Associate</h4>
+                    <p class="text-gray-400 mb-4">{{certs.validity}}</p>
+                    <ul class="text-gray-300 space-y-1 text-sm">
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.ai.skill1}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.ai.skill2}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.ai.skill3}}</li>
+                        <li><i aria-hidden="true" class="fa-solid fa-check text-primary mr-2"></i> {{certs.ai.skill4}}</li>
+                    </ul>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/MartinGoffa-9861/791C98ABC7075029?sharingId=10FAE2DAC5A3378D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-primary hover:text-sky-400 transition-colors">
+                        <i aria-hidden="true" class="fa-solid fa-circle-check"></i> {{certs.verify}}
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-20 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-3xl font-bold text-white mb-6">{{contact.title}}</h2>
+            <p class="text-gray-400 text-lg mb-10">{{contact.text}}</p>
+            
+            <address class="not-italic flex flex-col md:flex-row justify-center items-center gap-8">
+                <a href="mailto:martin.goffa.dev@gmail.com" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i aria-hidden="true" class="fa-solid fa-envelope text-2xl"></i>
+                    martin.goffa.dev@gmail.com
+                </a>
+                
+                <a href="https://www.linkedin.com/in/martin-goffa-019901241/" target="_blank" rel="me noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i aria-hidden="true" class="fa-brands fa-linkedin text-2xl"></i>
+                    {{contact.linkedin}}
+                </a>
+                
+                <a href="https://github.com/goffamartin" target="_blank" rel="me noopener noreferrer" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors text-lg">
+                    <i aria-hidden="true" class="fa-brands fa-github text-2xl"></i>
+                    {{contact.github}}
+                </a>
+            </address>
+        </div>
+    </section>
+    </main>
+
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800 bg-darker">
+        <p>{{footer.text}}</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach((element) => {
+                observer.observe(element);
+            });
+
+            // Work experience: positions after the first two are collapsed behind a toggle (without JS everything stays visible)
+            const timeline = document.getElementById('experience-timeline');
+            const toggle = document.querySelector('.timeline-toggle');
+            const historyCount = timeline.querySelectorAll('.timeline-item:nth-child(n+3)').length;
+            if (historyCount > 0) {
+                const label = toggle.querySelector('.timeline-toggle-label');
+                const icon = toggle.querySelector('i');
+                const update = (expanded) => {
+                    timeline.classList.toggle('is-expanded', expanded);
+                    toggle.setAttribute('aria-expanded', expanded);
+                    label.textContent = expanded ? toggle.dataset.labelCollapse : toggle.dataset.labelExpand.replace('{count}', historyCount);
+                    icon.classList.toggle('rotate-180', expanded);
+                };
+                toggle.addEventListener('click', () => update(toggle.getAttribute('aria-expanded') !== 'true'));
+                update(false);
+                toggle.hidden = false;
+            }
+        });
+    </script>
+</body>
+</html>

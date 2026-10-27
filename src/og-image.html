@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- Template for assets/images/og-image.png (1200×630) – serve the repo root, open /src/og-image.html at that viewport size and take a screenshot -->
+<!-- Template for assets/images/og-image.png and og-image-en.png (1200×630) – serve the repo root, open /src/og-image.html
+     (Czech) or /src/og-image.html?lang=en (English) at that viewport size and take a screenshot -->
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
@@ -39,12 +40,18 @@
         <div class="tags">
             <div class="tag"><i class="fa-brands fa-microsoft"></i>.NET &amp; Blazor</div>
             <div class="tag"><i class="fa-solid fa-cloud"></i>Microsoft Azure</div>
-            <div class="tag"><i class="fa-solid fa-robot"></i>AI integrace</div>
+            <div class="tag"><i class="fa-solid fa-robot"></i><span data-en="AI integration">AI integrace</span></div>
         </div>
         <div class="url">dev.goffa.cz</div>
     </div>
     <div class="photo">
         <img src="/assets/images/martin-goffa-portrait.jpg" alt="">
     </div>
+    <script>
+        // ?lang=en swaps the Czech texts for their data-en variants
+        if (new URLSearchParams(location.search).get('lang') === 'en') {
+            document.querySelectorAll('[data-en]').forEach(element => element.textContent = element.dataset.en);
+        }
+    </script>
 </body>
 </html>

@@ -2,9 +2,10 @@
   "name": "goffamartin-presentation-web",
   "private": true,
   "scripts": {
-    "copy:vendor": "node scripts/copy-vendor.js && node scripts/cache-bust.js",
-    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify && node scripts/cache-bust.js",
+    "build": "node scripts/build-html.js && tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify && node scripts/cache-bust.js",
+    "build:css": "npm run build",
     "watch:css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "copy:vendor": "node scripts/copy-vendor.js && node scripts/cache-bust.js",
     "indexnow": "node scripts/indexnow.js"
   },
   "devDependencies": {
