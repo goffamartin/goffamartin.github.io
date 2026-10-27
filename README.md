@@ -19,7 +19,7 @@ assets/
   images/             og-image.png (social preview)
 src/
   input.css           Tailwind source + custom CSS
-  og-image.html       template for assets/images/og-image.png
+  og-image.html       template for assets/images/og-image.png (after regenerating it, run `npm run build:css` to update its hash)
 scripts/
   copy-vendor.js      copies fonts and icons from node_modules into assets/
 tailwind.config.js    Tailwind theme (colors, font)
@@ -32,7 +32,7 @@ GitHub Pages publishes the repository root, so the files above that the site ser
 ```sh
 npm install
 npm run watch:css     # rebuild CSS while editing
-npm run build:css     # minified build + cache-busting hash in index.html – run before committing
+npm run build:css     # minified build + cache-busting hashes (CSS, og-image) in index.html – run before committing
 npm run copy:vendor   # only after updating Inter or Font Awesome
 npm run indexnow      # after a deploy is live: ask Bing/Seznam to recrawl the sitemap URLs
 ```
